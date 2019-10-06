@@ -1,0 +1,71 @@
+body 
+{
+	font : 20px Tahoma ;
+	text-align: center;
+	color : black;
+	background-color: #eee6ff;
+	margin:0;
+    padding:0;
+}
+
+
+.contenuOnglets{
+    width: 100%;
+    height: 350px;
+}
+
+.contenuOnglets .boutons{
+    height : 15%;
+}
+
+
+.contenuOnglets .boutons button{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border :none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Tahoma;
+    color: white;
+    font-size: 15px;
+    background-color: #8842d4;
+
+}
+
+.contenuOnglets .boutons button:hover{
+    background-color: #6c31ad;
+}
+
+
+form{
+	
+	margin:0 auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid black;
+	border-radius: 1em;
+}
+
+
+
+input,textarea{
+	width: 300px;
+	box-sizing: border-box;
+	border:1px solid #999;
+}
+
+textarea{
+	vertical-align: top;
+	height: 5em;
+}
+
+.button{
+
+	padding-left: center;
+}
+
+
+
+
