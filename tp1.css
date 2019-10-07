@@ -24,6 +24,22 @@ h1{
     }
 }
 
+h2{
+    animation: typ 10s ;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes typ {
+    0%{
+        width: -90ch;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
 .slidershow{
     width: 700px;
     height: 600px;

@@ -5,7 +5,8 @@ body
 	color : black;
 	background-color: #eee6ff;
 	margin:0;
-    padding:0;
+  padding:0;
+  perspective: 800px;
 }
 
 
@@ -38,6 +39,21 @@ body
 .contenuOnglets .boutons button:hover{
     background-color: #6c31ad;
 }
+
+
+.lycee{
+  margin-top: 100px;
+
+  transition: 6s;
+  transform: rotateY(-360deg);
+}
+
+.ece{
+  margin-left: 400px;
+  transition: 6s;
+  transform: rotateY(360deg);
+}
+
 
 
 
