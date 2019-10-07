@@ -10,6 +10,7 @@ body
 
 
 .contenuOnglets{
+  margin-top: 5px;
     width: 100%;
     height: 50px;
 }
@@ -39,73 +40,91 @@ body
 }
 
 
-.progressbar{
-	counter-reset: step ;
-	counter-increment: step 2010;
-	margin-top: 75px;
-	padding: 0;
 
+ol {
+	position: relative;
+	display: block;
+	margin: 100px;
+	height: 4px;
+	background: #6c31ad;
+}
+ol::before,
+ol::after {
+	content: "";
+	position: absolute;
+	top: -8px;
+	display: block;
+	width: 0;
+	height: 0;
+  border-radius: 10px;
+	border: 10px solid #6c31ad;
+}
+ol::before {
+	left: -5px;
+}
+ol::after {
+	right: -10px;
+	border: 10px solid transparent;
+	border-right: 0;
+	border-left: 20px solid #6c31ad;
+  border-radius: 3px;
 }
 
-.lycee{
-	margin-top: 100px;
-	margin-left: -400px;
-	border-radius: 50%;
+/* ---- Timeline elements ---- */
+li {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 50%;
+	font: 14px Tahoma;
+  height: 50px;
+}
+li .diplome {
+  position: absolute;
+  top: -47px;
+  left: 36%;
+  color: black;
+}
+li .point {
+	content: "";
+	top: -4px;
+	left: 43%;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border: 4px solid #6c31ad;
+	border-radius: 10px;
+	background: #fff;
+  position: absolute;
+}
+li .description {
+  display: none;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+  font-weight: normal;
+  z-index: 1;
+}
+.description::before {
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #f4f4f4;
+  position: absolute;
+  top: -5px;
+  left: 43%;
 }
 
-/*ece{
-	margin-left: -200px;
-}*/
-
-li{
-		list-style-type: none;
-		float: left;
-		width: 33.3333%;
-		position: relative;
-		text-align: center;
-
-	}
-
-		li:before{
-			/*margin-left: 100px; */
-
-			content :counter(step);
-			counter-increment: step 3;
-			width: 50px;
-			height: 50px;
-			line-height: 50px;
-			border:3px solid white;
-			display: block;
-			text-align: center;
-			margin: 0 auto 10 px auto;
-			border-radius: 50%;
-			background-color: #fff;
-		}
-		li:after{
-			content :counter(step);
-			counter-increment: step 1;
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 3px;
-			background-color: #fff;
-			top: 25px;
-			left: -50%;
-			z-index: -1;
-		}
-
-		li:first-child:after{
-			/*content :counter(step);
-
-			counter-increment: step 2;
-*/
-			content: "";
-		}
-
-		li:active{
-			color: black;
-				}
-
-
+/* ---- Hover effects ---- */
+li:hover {
+	cursor: pointer;
+  color: #48A4D2;
+}
+li:hover .description {
+  display: block;
+}
 
 	

@@ -6,16 +6,18 @@ body
 	background-color: #eee6ff;
 	margin:0;
     padding:0;
+    list-style: none;
 }
 
 
 .contenuOnglets{
-    width: 100%;
-    height: 350px;
+	margin-top: 5px;
+     width: 100%;
+    height: 50px;
 }
 
 .contenuOnglets .boutons{
-    height : 15%;
+    height : 100%;
 }
 
 
@@ -38,34 +40,36 @@ body
     background-color: #6c31ad;
 }
 
+.skills{
+	width: 500px;
+	margin:60px auto;
+	color: black;
+}
 
-form{
-	
-	margin:0 auto;
-	width: 400px;
-	padding: 1em;
-	border: 1px solid black;
-	border-radius: 1em;
+.skills li{
+	margin:20px 0;
 }
 
 
-
-input,textarea{
-	width: 300px;
-	box-sizing: border-box;
-	border:1px solid #999;
+.bar{
+	background : black;
+	display: block;
+	height: 2px;
+	border:1px solid(blue);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px white;
 }
 
-textarea{
-	vertical-align: top;
-	height: 5em;
+.bar span{
+	height: 2px;
+	float: left;
+	background:red;
 }
 
-.button{
-
-	padding-left: center;
+.html{
+	width: 90%;
 }
-
 
 
 
