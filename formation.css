@@ -1,0 +1,111 @@
+body 
+{
+	font : 20px Tahoma ;
+	text-align: center;
+	color : black;
+	background-color: #eee6ff;
+	margin:0;
+    padding:0;
+}
+
+
+.contenuOnglets{
+    width: 100%;
+    height: 50px;
+}
+
+.contenuOnglets .boutons{
+    height : 100%;
+}
+
+
+.contenuOnglets .boutons button{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border :none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Tahoma;
+    color: white;
+    font-size: 15px;
+    background-color: #8842d4;
+
+}
+
+.contenuOnglets .boutons button:hover{
+    background-color: #6c31ad;
+}
+
+
+.progressbar{
+	counter-reset: step ;
+	counter-increment: step 2010;
+	margin-top: 75px;
+	padding: 0;
+
+}
+
+.lycee{
+	margin-top: 100px;
+	margin-left: -400px;
+	border-radius: 50%;
+}
+
+/*ece{
+	margin-left: -200px;
+}*/
+
+li{
+		list-style-type: none;
+		float: left;
+		width: 33.3333%;
+		position: relative;
+		text-align: center;
+
+	}
+
+		li:before{
+			/*margin-left: 100px; */
+
+			content :counter(step);
+			counter-increment: step 3;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			border:3px solid white;
+			display: block;
+			text-align: center;
+			margin: 0 auto 10 px auto;
+			border-radius: 50%;
+			background-color: #fff;
+		}
+		li:after{
+			content :counter(step);
+			counter-increment: step 1;
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			background-color: #fff;
+			top: 25px;
+			left: -50%;
+			z-index: -1;
+		}
+
+		li:first-child:after{
+			/*content :counter(step);
+
+			counter-increment: step 2;
+*/
+			content: "";
+		}
+
+		li:active{
+			color: black;
+				}
+
+
+
+	
